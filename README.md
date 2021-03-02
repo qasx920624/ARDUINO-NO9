@@ -37,8 +37,8 @@ void loop() {
 ![image](https://github.com/qasx920624/ARDUINO-NO9/blob/main/627E1CB5-1A03-4A92-8330-493A94DB3110.jpeg)
 -----------------------
 第二題是控制兩個七段LED顯示器同時發亮<p>
-程式內容如下
-```c++
+程式內容如下<p>
+``` c++
  int a[10][7] = {{1,1,1,1,1,1,0},
                 {0,1,1,0,0,0,0},
                 {1,1,0,1,1,0,1},
@@ -65,9 +65,7 @@ void loop() {
   for (int j = 0;j<2;j++)
     {
       digitalWrite(9,t[j+2]);   
-      digitalWrite(10,t[j]);
-      
-      
+      digitalWrite(10,t[j]);  
       for(int i = 2;i<9;i++)
         {
           digitalWrite(i,a[d[j]][i-2]);
@@ -124,7 +122,7 @@ void loop() {
         delay(5);
     }
   }
-  c++```
+  ```
   ```
   --------
   成品如下
