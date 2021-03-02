@@ -96,7 +96,7 @@ int b[20] = {0,0,0,1,
              0,0,1,0,
              0,1,0,0,
              1,0,0,0};
-
+int e[] = {12,8,4,0}
 float c;
 
 void setup() {
@@ -111,7 +111,8 @@ void loop() {
 
   for (int j = 0;j<4;j++)
     {
-      digitalWrite(q,b[q-9+e[j]]);
+      for(int q = 9;q<13;q++)
+        digitalWrite(q,b[q-9+e[j]]);
       for(int i = 2;i<9;i++)
         {
           digitalWrite(i,a[d[j]][i-2]);
