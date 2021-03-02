@@ -31,3 +31,6 @@ void loop() {
     }
 }
 ```
+----------------------
+成品如下
+![image](https://github.com/qasx920624/ARDUINO-NO9/blob/main/627E1CB5-1A03-4A92-8330-493A94DB3110.jpeg)
