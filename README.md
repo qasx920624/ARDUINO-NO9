@@ -77,3 +77,52 @@ void loop() {
 --------------
 成品如下
 ![image](https://github.com/qasx920624/ARDUINO-NO9/blob/main/156112143_265898575015081_7421873842532701171_n.jpg)
+--------------
+第三題是要讓全部的七段LED顯示器發亮<p>
+程式內容如下
+c++```
+int a[10][7] = {{1,1,1,1,1,1,0},
+                {0,1,1,0,0,0,0},
+                {1,1,0,1,1,0,1},
+                {1,1,1,1,0,0,1},
+                {0,1,1,0,0,1,1},
+                {1,0,1,1,0,1,1},
+                {0,0,1,1,1,1,1},
+                {1,1,1,0,0,1,0},
+                {1,1,1,1,1,1,1},
+                {1,1,1,0,0,1,1}};
+int b[20] = {0,0,0,1,
+             0,0,1,0,
+             0,1,0,0,
+             1,0,0,0};
+
+float c;
+
+void setup() {
+  // put your setup code here, to run once:
+  for(int i = 2 ;i<13;i++)
+    pinMode(i,OUTPUT);
+    c = millis();
+}
+int d[4] ={1,2,3,4};
+void loop() {
+  // put your main code here, to run repeatedly:
+
+  for (int j = 0;j<4;j++)
+    {
+      digitalWrite(9,b[j+12]);   
+      digitalWrite(10,b[j+8]);
+      digitalWrite(11,b[j+4]);
+      digitalWrite(12,b[j]);
+      //digitalWrite(9,t[j][1]);
+      //digitalWrite(10,t[j][2]);
+      for(int i = 2;i<9;i++)
+        {
+          digitalWrite(i,a[d[j]][i-2]);
+        }
+        delay(5);
+    }
+  }```
+  --------
+  成品如下
+  ![image](https://github.com/qasx920624/ARDUINO-NO9/blob/main/522843E5-DFC5-49C8-A8D5-F9A0256902AA.jpeg)
