@@ -111,10 +111,7 @@ void loop() {
 
   for (int j = 0;j<4;j++)
     {
-      digitalWrite(9,b[j+12]);   
-      digitalWrite(10,b[j+8]);
-      digitalWrite(11,b[j+4]);
-      digitalWrite(12,b[j]);
+      digitalWrite(q,b[q-9+e[j]]);
       for(int i = 2;i<9;i++)
         {
           digitalWrite(i,a[d[j]][i-2]);
