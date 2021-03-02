@@ -75,8 +75,8 @@ void loop() {
         delay(5);
     }
 }
-C++```
-
+```
+```
 --------------
 成品如下
 ![image](https://github.com/qasx920624/ARDUINO-NO9/blob/main/156112143_265898575015081_7421873842532701171_n.jpg)
@@ -117,8 +117,6 @@ void loop() {
       digitalWrite(10,b[j+8]);
       digitalWrite(11,b[j+4]);
       digitalWrite(12,b[j]);
-      //digitalWrite(9,t[j][1]);
-      //digitalWrite(10,t[j][2]);
       for(int i = 2;i<9;i++)
         {
           digitalWrite(i,a[d[j]][i-2]);
