@@ -73,7 +73,8 @@ void loop() {
         }
         delay(5);
     }
-}```
+}
+C++```
 --------------
 成品如下
 ![image](https://github.com/qasx920624/ARDUINO-NO9/blob/main/156112143_265898575015081_7421873842532701171_n.jpg)
